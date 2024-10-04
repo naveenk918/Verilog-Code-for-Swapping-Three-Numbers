@@ -31,12 +31,12 @@ Capture the waveform output and include the results in your report for verificat
 Verilog Code:
 
 module swap_three_numbers(
-    input wire [7:0] a_in,b_in,c_in,      
-    output reg [7:0] a_out,b_out,c_out);
+    input wire [7:0] a_in,b_in,c_in,  // 8-bit inputs 
+    output reg [7:0] a_out,b_out,c_out); //8-bit outputs
     always @(*) begin
-        a_out = b_in;  
-        b_out = c_in;   
-        c_out = a_in;   
+        a_out = b_in;  //assign a_out as b_in
+        b_out = c_in;  //assign b_out as c_in
+        c_out = a_in;  //assign c_out as a_in 
     end
 endmodule
 
